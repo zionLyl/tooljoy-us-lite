@@ -45,12 +45,14 @@ Dependencies: `pip install yfinance pandas numpy`
 |---|---|---|
 | Yahoo Finance (yfinance) | Free | No API key needed |
 
+> Higher tiers support up to **8 US data sources** + **4 alternative data sources**: Polygon.io (tick-level), Finnhub (real-time + news), Alpha Vantage, Twelve Data, FMP (DCF valuations), Tiingo, IEX Cloud, plus Unusual Whales (options flow), Quiver Quant (Congress trades), NewsAPI, SEC EDGAR
+
 ---
 
 ## 🔧 ToolJoy US Full Product Line
 
 ### Basic
-**19 sector ETFs** (11 SPDR + 8 thematic) + **7 financial stress indicators** + **options P/C ratio**
+**19 sector ETFs** (11 SPDR + 8 thematic) + **7 financial stress indicators** + **Alpha Vantage dual-source verification** + **options P/C ratio**
 
 Ask "Which sectors are strong?":
 ```
@@ -71,7 +73,7 @@ Trend Score (5-point scale):
 ```
 
 ### Pro
-**Strategy signal engine** + **quantitative stock picker** (500+ stocks) + **news sentiment AI scoring** + **visual dashboard**
+**Strategy signal engine** + **Finnhub real-time + company news** + **FMP DCF valuations** + **quantitative stock picker** (500+ stocks) + **news sentiment AI scoring** + **visual dashboard**
 
 Ask "Run full US report":
 ```
@@ -101,7 +103,7 @@ Ask "Update dashboard":
 > Receive a full dark-theme visual dashboard screenshot (strategy panel, stress gauge, sector heatmap, market snapshot cards)
 
 ### Advanced
-**6 backtesting strategies** + **multi-strategy comparison** + **SEC EDGAR filings** + **options Greeks**
+**6 backtesting strategies** + **Tiingo + IEX Cloud 3-year deep history** + **SEC EDGAR filings** + **options Greeks** + **multi-strategy comparison**
 
 Ask "Backtest momentum strategy, US, last 6 months":
 ```
@@ -130,7 +132,7 @@ Sector Rotation   +12.5%  0.79   -8.4%   49%
 ```
 
 ### Ultimate
-**Full automation**: 4 daily reports auto-pushed + **Alpaca paper trading** + **options flow alerts** + **Congress trade tracking** + **factor optimizer** + full source code
+**Full automation** + **all 12 data sources unlocked** + **Polygon.io tick-level real-time** + **Unusual Whales options flow** + **Quiver Congress trades** + **Alpaca paper trading** + **factor optimizer** + full source code
 
 Your AI runs automatically, you do nothing:
 ```
