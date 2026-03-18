@@ -7,7 +7,7 @@
 | Tier | What It Does | Scripts | Data Sources | Key Capabilities |
 |---|---|---|---|---|
 | **Lite** (this repo) | Free AI stock research | 3 | 1 | Quote + technicals + index snapshot |
-| **Full** | Institutional-grade quant | 45 | 6+ | 3 strategies + 6 ML models + multi-agent + paper trading + full auto |
+| **Full** | Institutional-grade quant | 45 | 6+ | 3 strategies + 6 ML models + multi-agent + paper trading + full auto | DM for access |
 
 > 📱 Upgrade: **WeChat LylZymm** ｜ **小红书 工具使我快乐**
 
@@ -51,7 +51,7 @@ Dependencies: `pip install yfinance pandas numpy`
 
 ---
 
-## Full — Complete Edition (45 scripts, ¥1,399)
+## Full — Complete Edition (45 scripts)
 
 > **Institutional-grade quant stack: 3 strategies + 6 ML models + multi-agent orchestration + paper trading**
 
@@ -166,7 +166,7 @@ Sector Rotation   +12.5%  0.79   -8.4%   49%
 
 ### Lite vs Full
 
-| Metric | Lite (Free) | Full (¥1,399) |
+| Metric | Lite (Free) | Full |
 |---|---|---|
 | Scripts | 3 | **45** |
 | Data Sources | 1 | **6+** |
@@ -184,25 +184,9 @@ Sector Rotation   +12.5%  0.79   -8.4%   49%
 | Scheduled Automation | — | ✅ |
 | Code | ~200 lines | **~10,000 lines** |
 
-### Why This Price
-
-Not priced by features — priced by **time saved**:
-
-| DIY Task | Time |
-|---|---|
-| Integrate 6+ data sources + fallback chains | 2 weeks |
-| API quirks (rate limits, timezone, encoding) | 1 week |
-| 3 strategies + 6 backtest with realistic costs | 2 weeks |
-| 6 ML models + hyperparameter tuning + overfitting | 2 weeks |
-| Multi-agent orchestration + monitoring + auto-trade | 2 weeks |
-| Alpaca integration + portfolio management | 1 week |
-| **Total** | **2-3 months** |
-
-¥1,399 ≈ saves 2-3 months ≈ less than ¥16/day
-
 ---
 
-> 📱 Upgrade: **WeChat LylZymm** ｜ **小红书 工具使我快乐**
+> 📱 Want Full access / upgrade / chat: **WeChat LylZymm** ｜ **小红书 工具使我快乐**
 >
 > 🇨🇳 A股版？→ [ToolJoy CN Lite](https://github.com/zionLyl/tooljoy-cn-lite)
 > 🇭🇰 HK版？→ DM for access
