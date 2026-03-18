@@ -1,14 +1,13 @@
 # 🔧 ToolJoy US Stock Research
 
-> AI + quantitative data, one sentence to get a full research report. Built over 3 months of real debugging — just install and use.
+> AI + quantitative data, one sentence to get a full research report. 139 scripts across 3 markets — this is the free US edition.
 
-## Product Line Overview
+## Two Tiers
 
-| Tier | What It Does | Data Sources | Key Capabilities |
-|---|---|---|---|
-| **Lite** (this repo) | Try AI stock research | 1 (yfinance) | Quote + technicals + index snapshot |
-| **Standard** | From single stocks → understand the market | 6 | + 19 sectors + stress monitor + screener + dashboard |
-| **Full** | Institutional research + full automation | 12 | + DCF + backtest + reports + paper trading + full source |
+| Tier | What It Does | Scripts | Data Sources | Key Capabilities |
+|---|---|---|---|---|
+| **Lite** (this repo) | Free AI stock research | 3 | 1 | Quote + technicals + index snapshot |
+| **Full** | Institutional-grade quant | 45 | 6+ | 3 strategies + 6 ML models + multi-agent + paper trading + full auto |
 
 > 📱 Upgrade: **WeChat LylZymm** ｜ **小红书 工具使我快乐**
 
@@ -52,120 +51,95 @@ Dependencies: `pip install yfinance pandas numpy`
 
 ---
 
-## Standard
+## Full — Complete Edition (45 scripts, ¥1,399)
 
-> **From watching stocks to understanding the entire market and finding opportunities**
+> **Institutional-grade quant stack: 3 strategies + 6 ML models + multi-agent orchestration + paper trading**
 
-### What's New vs Lite
+### What Full Adds Over Lite
 
-| New Capability | Details |
-|---|---|
-| **19 ETF Sector Analysis** | 11 SPDR + 8 thematic (SMH, IGV, IBB, ARKK...), multi-timeframe scoring |
-| **7 Financial Stress Indicators** | VIX + term structure + credit spread + yield curve + gold + USD + breadth |
-| **Options P/C Ratio** | Market-wide put/call sentiment |
-| **Strategy Signal Engine** | Momentum + RSI + SMA50 + MACD composite scoring |
-| **Full-Market Screener** | 500+ stocks, 5-factor quantitative ranking |
-| **Visual Dashboard** | Dark theme, sector heatmap + strategy panel + stress gauge |
-| **Earnings Analysis** | Revenue/income/margins/YoY + consensus estimates |
-| **News Digest** | Finnhub + NewsAPI dual-source aggregation |
+**📡 Multi-Source Data**
+→ yfinance + Alpha Vantage + Finnhub + FMP + Twelve Data + NewsAPI
+→ Smart fallback chain — if one source fails, auto-switch to the next
 
-### Data Sources (6)
+**📊 Full-Market Screening**
+→ 5-factor scoring: momentum + volatility + volume-price + trend + valuation
+→ 500+ stocks scanned, ranked by composite score
+→ Custom factor framework (Alpha101 + user-defined, IC/IR evaluation)
 
-| Source | Cost | Capability |
-|---|---|---|
-| yfinance | Free | Quotes + financials + options chain |
-| Alpha Vantage | Free 25/day | Technical indicators + forex |
-| Finnhub | Free 60/min | Real-time + company news + analyst ratings |
-| FMP | Free 250/day | DCF valuations + ETF holdings + grades |
-| Twelve Data | Free 800/day | Real-time + reference data |
-| NewsAPI | Free 100/day | Global news aggregation |
+**📝 Deep Research Reports**
+→ Fundamentals: revenue/income/margins + PE/PB/ROE + YoY trends
+→ Technicals: MA system + MACD + RSI + Bollinger + ATR
+→ Flow: institutional holdings + insider transactions
+→ News: multi-source aggregation + sentiment scoring
+→ Health grade A-D
 
-### What You'll See
+**🎯 3 Core Strategies**
+→ 🗡️ Sector Rotation: 19 ETFs, multi-timeframe momentum
+→ 🛡️ Ambush: bottom-fishing with 5-layer signal validation
+→ ⚖️ Quant Screener: AND-logic composite signal, backtested
 
-Ask **"Which sectors are strong?"**:
+**🧠 6 ML Models**
+→ Triple Barrier + Purged CV
+→ LightGBM gradient boosting
+→ LSTM deep learning (PyTorch)
+→ Alpha101 factor library (20+ factors)
+→ Risk Parity portfolio allocation
+→ Regime Detection (bull/bear/sideways switching)
 
-```
-🏭 US Sector Analysis (19 ETFs)
-━━━━━━━━━━━━━━━━━━━━
-🟢 XLU  Utilities     4.2  Strong   20d: +8.3%
-🟢 XLE  Energy        3.8  Strong   20d: +5.1%
-🟢 XLC  Comm Services 3.5  Strong   20d: +4.7%
-🟡 XLK  Technology    2.8  Neutral  20d: +1.2%
-🔴 XLRE Real Estate   1.2  Weak     20d: -3.4%
+**📈 Backtest + Pattern + Factor Analysis**
+→ Single/multi-strategy comparison + parameter sweep
+→ Chart pattern recognition (head & shoulders, double bottom, wedge, triangle)
+→ Factor IC/IR, quintile backtest, decay analysis
+→ Signal parameter Grid Search optimization
 
-🚦 Financial Stress (1/7 red) → PASS
-  VIX: 23.4 ✅ | Term: Inverted ⚠️ | Credit: ✅
-  Yield Curve: ✅ | Gold: ✅ | USD: ✅ | Breadth: ✅
-```
+**🤖 Multi-Agent Orchestration**
+→ 5 AI roles: Sentinel → Analyst → Earnings → Strategist → Orchestrator
+→ One sentence triggers full pipeline: "Analyze NVDA" → data → report → score → action
 
-Ask **"NVDA earnings analysis"**:
+**📢 Full Monitoring Suite**
+→ Capital flow: institutional vs retail, unusual volume detection
+→ Commodities: oil / gas / copper / gold / silver
+→ Forex: 7 currency pairs
+→ News + sentiment + risk alerts + stress testing
 
-```
-📊 NVIDIA Earnings Analysis
-━━━━━━━━━━━━━━━━━━━━
-Revenue: $215.9B (+65.5% YoY)
-Net Income: $72.8B (+145.2%)
-Gross Margin: 73.0% | Operating Margin: 61.1%
-ROE: 101.5% | Free Cash Flow: $60.9B
+**💰 Alpaca Paper Trading**
+→ Real market simulation, auto order execution
+→ Signal-driven buy/sell, scheduled rebalancing
+→ Pre-market screening + post-close P&L report
 
-Analyst Consensus: Strong Buy (42/45)
-Price Target: $175 (current: $182.65)
-```
-
----
-
-## Full
-
-> **Institutional-grade research + full automation. Saves you 2-3 months of development.**
-
-### What's New vs Standard
-
-| New Capability | Details |
-|---|---|
-| **DCF Valuation** | 5-year FCF projection + WACC sensitivity matrix (5×3) |
-| **Peer Comparison (Comps)** | Auto-match peer group, 6-dimension comparison table |
-| **Deep Research Report** | One command → full 8-dimension research report |
-| **Catalyst Calendar** | Earnings / dividends / FOMC / CPI / options expiry |
-| **Institutional Holdings** | Top holders (Vanguard/BlackRock) + insider transactions |
-| **Anomaly Signals** | Large options flow + insider moves + unusual volume |
-| **6 Backtest Strategies** | Momentum / mean reversion / trend follow / vol breakout / multi-factor / sector rotation |
-| **Factor Optimizer** | Grid search (~200 combos) + genetic algorithm |
-| **Alpaca Paper Trading** | $100K paper account, one-click orders + auto-rebalance |
-| **Auto Push** | 4x daily → Telegram |
-| **Stop-loss Alerts** | Soft -5% / hard -8% |
-| **Options Flow** | Unusual Whales — sweeps, dark pool, whale trades |
-| **Congress Trades** | Quiver Quant — track what Congress is buying |
-| **PDF Report Export** | Markdown → professionally formatted PDF |
-| **Full Source Code** | ~8000 lines Python, fully modifiable |
-
-### Data Sources (all 12)
-
-| Source | Cost | Not in Standard |
-|---|---|---|
-| Tiingo | Free 1000/day | 3-year+ deep history |
-| IEX Cloud | Free 50k msg/mo | Full-market data |
-| SEC EDGAR | Free | 10-K/10-Q filing full text |
-| Polygon.io | $29+/mo | Tick-level real-time + options |
-| Unusual Whales | $40/mo | Options flow / dark pool |
-| Quiver Quant | $10/mo | Congress trades / insider / gov contracts |
-
-> Plus all 6 from Standard = 12 total sources with smart fallback chains
+**📊 Dashboard + Push Notifications**
+→ Dark theme: positions / P&L / sector distribution / signals
+→ Telegram auto-push
+→ Cron jobs one-click deploy
 
 ### What You'll See
 
-Ask **"Backtest mean reversion, last 6 months"**:
+Ask **"Screen top 10 US stocks"**:
 
 ```
-📊 Backtest: Mean Reversion (US)
+📊 US Stock Screener Top 10
 ━━━━━━━━━━━━━━━━━━━━
-  Annual Return:  +28.89%
-  Sharpe Ratio:   2.43
-  Max Drawdown:   -3.0%
-  Win Rate:       72.2%
-  Benchmark (SPY): +16.92%
+ #  Stock         Score  Signal    Sector
+ 1  NVDA          85.2   Strong Buy  Tech
+ 2  META          79.4   Strong Buy  Comm
+ 3  AMZN          76.1   Buy         Consumer
+ 4  MSFT          74.8   Buy         Tech
+ ...
 ```
 
-Ask **"Compare all strategies"**:
+Ask **"Backtest sector rotation"**:
+
+```
+📊 Sector Rotation Backtest (1 year)
+━━━━━━━━━━━━━━━━━━━━
+  Annual Return:  +18.7%
+  Sharpe Ratio:   1.34
+  Max Drawdown:   -5.5%
+  Win Rate:       58%
+  Benchmark (SPY): +16.9%
+```
+
+Ask **"Compare all 6 strategies"**:
 
 ```
 📊 6-Strategy Comparison
@@ -178,53 +152,60 @@ Multi-Factor      +16.1%  1.15   -4.8%   63%
 Sector Rotation   +12.5%  0.79   -8.4%   49%
 ```
 
-Your AI runs on autopilot:
+### Data Sources (6+, mostly free)
 
-```
-[Pre-market]  📢 Market brief → Telegram
-[Open]        📢 Opening signals
-[Midday]      📢 Midday update
-[Close]       📢 Full summary + dashboard screenshot
+| Source | Capability |
+|---|---|
+| yfinance | Quotes + financials + options + institutional holders |
+| Alpha Vantage | Technical indicators + forex (free 25/day) |
+| Finnhub | Real-time + news + analyst ratings (free 60/min) |
+| FMP | DCF valuations + ETF holdings (free 250/day) |
+| Twelve Data | Real-time + reference data (free 800/day) |
+| NewsAPI | Global news aggregation (free 100/day) |
+| Alpaca | Paper trading (free signup) |
 
-⚠️ BX down -7.8% → soft stop triggered
-🐋 NVDA: Large call sweep $200 strike — 12x avg volume
-🏛️ Nancy Pelosi bought NVDA calls (filed 3/8)
-```
+### Lite vs Full
 
----
+| Metric | Lite (Free) | Full (¥1,399) |
+|---|---|---|
+| Scripts | 3 | **45** |
+| Data Sources | 1 | **6+** |
+| Strategies | — | **3 core + 6 backtest** |
+| ML Models | — | **6** |
+| Full-Market Screening | — | **500+ stocks** |
+| Deep Research Report | — | ✅ |
+| Chart Pattern Recognition | — | ✅ |
+| Factor Analysis | — | ✅ |
+| Multi-Agent Orchestration | — | ✅ |
+| Backtest Framework | — | ✅ |
+| Paper Trading | — | **Alpaca** |
+| Monitoring + Push | — | **Telegram** |
+| Dashboard | — | ✅ |
+| Scheduled Automation | — | ✅ |
+| Code | ~200 lines | **~10,000 lines** |
 
-## Technical Summary
+### Why This Price
 
-| Metric | Lite | Standard | Full |
-|---|---|---|---|
-| Data Sources | 1 | 6 | 12 |
-| Analysis Modules | 2 | 15 | 30+ |
-| Backtest Strategies | — | — | 6 |
-| Sector ETFs | — | 19 | 19 |
-| Stress Indicators | — | 7 | 7 |
-| Institutional Modules | — | 3 | 13 |
-| Code | ~200 lines | ~3000 lines | ~8000 lines |
-| Automation | — | — | ✅ |
-| Paper Trading | — | — | Alpaca |
-
-## Why This Price
-
-Not priced by feature count — priced by **how much time it saves you**:
+Not priced by features — priced by **time saved**:
 
 | DIY Task | Time |
 |---|---|
-| Integrate 12 data sources + smart fallback | 2 weeks |
+| Integrate 6+ data sources + fallback chains | 2 weeks |
 | API quirks (rate limits, timezone, encoding) | 1 week |
-| 6 backtest strategies with realistic costs | 1 week |
-| 9 institutional modules (DCF/Comps/catalyst...) | 2 weeks |
-| Portfolio risk + optimizer + automation | 1 week |
+| 3 strategies + 6 backtest with realistic costs | 2 weeks |
+| 6 ML models + hyperparameter tuning + overfitting | 2 weeks |
+| Multi-agent orchestration + monitoring + auto-trade | 2 weeks |
+| Alpaca integration + portfolio management | 1 week |
 | **Total** | **2-3 months** |
+
+¥1,399 ≈ saves 2-3 months ≈ less than ¥16/day
 
 ---
 
 > 📱 Upgrade: **WeChat LylZymm** ｜ **小红书 工具使我快乐**
 >
-> 🇨🇳 A股用户？See [ToolJoy CN Lite](https://github.com/zionLyl/tooljoy-cn-lite)
+> 🇨🇳 A股版？→ [ToolJoy CN Lite](https://github.com/zionLyl/tooljoy-cn-lite)
+> 🇭🇰 HK版？→ DM for access
 
 ## License
 MIT
